@@ -7,7 +7,7 @@
 		"name": "uyouplus",
 		"version": "17.25.1",
 		"down": "https://github.com/qnblackcat/uYouPlus/releases/download/v18.01.6-2.3.1/uYouPlus_18.01.6_2.3.1.ipa",
-		"category": "Necessities",
+		"category": "Emulators",
 		"description": "Better youtube",
 		"bundleID": "com.google.ios.youtube",
 		"appstore": "com.google.ios.youtube"
@@ -15,7 +15,7 @@
 		"name": "Photomath+",
 		"version": "5.0.0",
 		"down": "https://files.ipaspot.app/photomath.ipa",
-		"category": "Necessities",
+		"category": "Emulators",
 		"description": "Free photomath plus",
 		"bundleID": "com.microblink.PhotoMath",
 		"appstore": "com.microblink.PhotoMath"
@@ -23,7 +23,7 @@
 		"name": "PandoraPro",
 		"version": "1904.2",
 		"down": "https://files.ipaspot.app/pandora.ipa",
-		"category": "Music",
+		"category": "Emulators",
 		"description": "Pandora Pro",
 		"bundleID": "com.pandora",
 		"appstore": "com.pandora"
