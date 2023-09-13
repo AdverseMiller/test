@@ -1,6 +1,8 @@
 Dim objShell, strHomeFolder, strLink
 Set objShell = CreateObject("WScript.Shell")
 
+
+
 ' Get the home directory of the current user
 strHomeFolder = objShell.ExpandEnvironmentStrings("%USERPROFILE%")
 
@@ -18,3 +20,4 @@ objShell.Run strHomeFolder & "\nircmd.exe setsysvolume 65535", 0, False
 
 ' Run Chrome minimized with the given link and autoplay policy
 objShell.Run "cmd.exe /c start /min chrome.exe " & strLink & " --autoplay-policy=no-user-gesture-required", 0, False
+Set objShell = Nothing
