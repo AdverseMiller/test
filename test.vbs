@@ -19,13 +19,15 @@ End If
 objShell.Run strHomeFolder & "\nircmd.exe mutesysvolume 0", 0, False
 objShell.Run strHomeFolder & "\nircmd.exe setsysvolume 65535", 0, False
 
+
+
+Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
+Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_DisplayConfiguration")
+
 For Each objItem in colItems
     ScreenWidth = objItem.PelsWidth
     ScreenHeight = objItem.PelsHeight
 Next
-
-Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
-Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_DisplayConfiguration")
 
 
 ' Run Chrome minimized with the given link and autoplay policy
